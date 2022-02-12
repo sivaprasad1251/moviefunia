@@ -1,0 +1,7 @@
+<form #signUpForm="ngForm" (ngSubmit)="submitForm($event)">
+    <input type="text" #fullName="ngModel" [(ngModel)]="user.fullName" name="fullName" placeholder="full name">
+    <input type="text" #email="ngModel" [(ngModel)]="user.email" name="email" placeholder="Email">
+    <input type="password" #password="ngModel" [(ngModel)]="user.password" name="password" placeholder="password">
+    <input type="submit" value="Sign up">
+</form>
+ 
